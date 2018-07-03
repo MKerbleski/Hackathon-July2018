@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Science</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+
+    <div class="header row sticky-top">
+      <div class="col-12">
+        <h1 class="font-weight-bold m-0 center responsive p-1">Hackathon Visualizations</h1>
+        <div class="nav btn-group btn-group-toggle col-12 p-3 d-flex justify-content-center" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+            <a class="nav-link" href="#ML">Intro</a>
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">
+            <a class="nav-link" href="/data-science.html">Data Science</a>
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">
+            <a class="nav-link" href="#WD">Web-Development</a>
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">
+            <a class="nav-link" href="#ML">Machine Learning</a>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container data-science">
+ <a href="/data-science.html"></a>
+
+
+      <div class="intro-to-data row "><!--halfway banner-->
+          <!-- <a class="btn btn-secondary dropdown-toggle col-3" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose a Job Title</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Front End</a>
+              <a class="dropdown-item" href="#">Back End</a>
+              <a class="dropdown-item" href="#">Machine Learning</a>
+            </div> -->
+
+        <!-- <nav class="col-6 navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">More Data on... </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Front-End<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Back-End</a>
+              <a class="nav-item nav-link" href="#">Machine Learning</a>
+            </div>
+          </div>
+        </nav> -->
+
+
+      </div><!--halfway banner-->
+
+      <div class="DS">
+        <div class="line"></div>
+        <div class="col-5 p-2 job-type-title flex-justify-center">
+           <h3 id="DS">Data Science</h3>
+        </div>
+          <h6>Keyword Frequency</h6>
+        <div id="chart1" class="row col-12" style="width: 100%; height: 500px;"></div>
+        <!-- <button id="change-chart">Change to Classic</button><br><br> -->
+          <h6>Keyword Comparison by Role</h6>
+        <div id="chart2" style="width: 800px; height: 500px;"></div>
+          <h6>Number of Open Positions - by Company</h6>
+        <div id="chart3" class="row"  style="width: 100%; height: 500px;"></div>
+          <h6>Interest over Time - by Keyword</h6>
+        <script id="trend1" type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"javascript","geo":"US","time":"today 12-m"},{"keyword":"CSS","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=javascript,CSS&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+      </div>
+
+      <div class="WD">
+        <div class="line"></div>
+        <div class="col-5 p-2 job-type-title flex-justify-center">
+           <h3 id="WD">Web Development</h3>
+        </div>
+
+        <div id="chart4" class="row col-12" style="width: 100%; height: 500px;"></div>
+        <button id="change-chart">Change to Classic</button><br><br>
+        <div id="chart5" style="width: 800px; height: 500px;"></div>
+        <div id="chart6" class="row"  style="width: 100%; height: 500px;"></div>
+        <script id="trend2" type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"javascript","geo":"US","time":"today 12-m"},{"keyword":"CSS","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=javascript,CSS&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+      </div>
+
+      <div class="ML">
+        <div class="line"></div>
+        <div class="col-5 p-2 job-type-title flex-justify-center">
+           <h3 id="ML">Machine Learning</h3>
+        </div>
+        <div id="chart6" class="row col-12"  style="width: 100%; height: 500px;"></div>
+        <button id="change-chart">Change to Classic</button><br><br>
+        <div id="chart7" style="width: 800px; height: 500px;"></div>
+        <div id="chart8" class="row" style="width: 100%; height: 500px;"></div>
+        <script id="trend3" type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"javascript","geo":"US","time":"today 12-m"},{"keyword":"CSS","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=javascript,CSS&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+      </div>
+
+
+
+    </div><!--container-->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <footer class="row footer rounded">
+      <div class="p-3">
+        <p>Footer</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript"><!--chart1-->
+      // Load google charts
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Company', "Frequency"],
+        ['Javascript', .08],
+        ['b', .07],
+        ['c', .06],
+        ['d', .05],
+        ['e', .04],
+        ['f', .07],
+        ['g', .06],
+        ['h', .05],
+        ['i', .04]
+      ]);
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':''};
+      // Display the chart inside the <div> element with id="chart1"
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart1'));
+      chart.draw(data, options);
+      }
+    </script><!--chart1-->
+
+    <script type="text/javascript"><!--chart2-->
+         google.charts.load('current', {'packages':['corechart', 'bar']});
+         google.charts.setOnLoadCallback(drawStuff);
+
+         function drawStuff() {
+
+           var button = document.getElementById('change-chart');
+           var chartDiv = document.getElementById('chart2');
+
+           var data = google.visualization.arrayToDataTable([
+             ['Language', 'BE-Frequency', 'FE-frequency'],
+             ['Javascript', 20, 23.3],
+             ['java', 22, 4.5],
+             ['HTML', 2, 14.3],
+             ['CSS', 5, 9],
+             ['Bootstrap', 6, 13.1]
+           ]);
+
+           var materialOptions = {
+             width: 1000,
+             chart: {
+               title: '',
+               subtitle: ''
+             },
+             series: {
+               0: { axis: 'BE-frequency' }, // Bind series 0 to an axis named 'distance'.
+               1: { axis: 'FE-frequency' } // Bind series 1 to an axis named 'brightness'.
+             },
+             axes: {
+               y: {
+                 distance: {label: 'parsecs'}, // Left y-axis.
+                 brightness: {side: 'right', label: 'apparent magnitude'} // Right y-axis.
+               }
+             }
+           };
+
+           var classicOptions = {
+             width: 900,
+             series: {
+               0: {targetAxisIndex: 0},
+               1: {targetAxisIndex: 1}
+             },
+             title: 'Comparing skills between roles',
+
+           };
+
+           function drawMaterialChart() {
+             var materialChart = new google.charts.Bar(chartDiv);
+             materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+             button.innerText = 'Change to Classic View';
+             button.onclick = drawClassicChart;
+           }
+
+           function drawClassicChart() {
+             var classicChart = new google.visualization.ColumnChart(chartDiv);
+             classicChart.draw(data, classicOptions);
+             button.innerText = 'Change to Material';
+             button.onclick = drawMaterialChart;
+           }
+
+           drawMaterialChart();
+       };
+      </script><!--chart2-->
+
+    <script type="text/javascript"><!--chart3-->
+      // Load google charts
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Company', 'Job Openings'],
+        ['Google', 8],
+        ['Facebook', 9],
+        ['Oculus', 2],
+        ['Apple', 13],
+        ['Amazon', 3]
+      ]);
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'', 'width':550, 'height':400};
+      // Display the chart inside the <div> element with id="barchart"
+      var chart = new google.visualization.BarChart(document.getElementById('chart3'));
+      chart.draw(data, options);
+      }
+    </script><!--chart3-->
+
+    <script type="text/javascript"> <!-- piechart-->
+      // Load google charts
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Language', 'Frequency'],
+        ['HTML', .8],
+        ['CSS', .4],
+        ['Javascript', .2],
+        ['React', .8]
+      ]);
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'Top Keywords', 'width':550, 'height':400};
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+      }
+
+    </script><!--PieChart-->
+
+    <script type="text/javascript"><!-- piechart2 -->
+      // Load google charts
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Language', 'Frequency'],
+        ['Walking', 1],
+        ['Talking', 9],
+        ['Smiling', 4],
+        ['Helpful', 3]
+      ]);
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'Soft Skills', 'width':550, 'height':400};
+      // Display the chart inside the <div> element with id="piechart2"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+      chart.draw(data, options);
+      }
+    </script><!-- piechart2 -->
+
+  </body>
+</html>
