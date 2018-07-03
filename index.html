@@ -26,11 +26,12 @@
 
     <div class="header row sticky-top">
       <div class="col-12">
+
         <h1 class="font-weight-bold m-0 center responsive p-1">Job Trends</h1>
         <div class="nav btn-group btn-group-toggle col-12 p-3 d-flex justify-content-center" data-toggle="buttons">
           <label class="btn btn-secondary active">
             <input type="radio" name="options" id="option1" autocomplete="off" checked>
-            <a class="nav-link" href="#intro">Intro</a>
+            <a  class="nav-link" href="#">Intro</a>
           </label>
           <label class="btn btn-secondary">
             <input type="radio" name="options" id="option2" autocomplete="off">
@@ -53,7 +54,7 @@
       <div class="hook row">
 
         <div class="col-12">
-          <h3 id="intro">Intro</h3>
+          <h3 name="intro" id="intro">Intro</h3>
           <p>This is data collected from Indeed.com that finds the frequency of top keywords of two job types: Web Developer and Data Scientist. </p>
         </div>
       </div>
@@ -70,12 +71,12 @@
         <tbody>
           <tr>
             <th scope="row">Data Scientist</th>
-            <td>$131,778</td>
+            <td>$123,778</td>
             <td>Python</td>
           </tr>
           <tr>
             <th scope="row">Web Developer</th>
-            <td>$66,130</td>
+            <td>$82,130</td>
             <td>JavaScript</td>
           </tr>
         </tbody>
@@ -89,7 +90,7 @@
           <h6>Keyword Frequency</h6>
         <div id="chart1" class="chart row col-12" style="width: 100%; height: 500px;"></div>
         <!-- <button id="change-chart">Change to Classic</button><br><br> -->
-        <h3 id="DS">Web Development</h3>
+        <h3 name="WD" id="test">Web Development</h3>
      </div>
        <h6>Keyword Frequency</h6>
      <div id="chart4" class="chart row col-12" style="width: 100%; height: 500px;"></div>
@@ -101,7 +102,7 @@
         <div id="chart3" class=" chart row"  style="width: 100%; height: 500px;"></div> -->
           <h6>Interest over Time - Web Developer vs Data Scientist</h6>
         <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Web developer","geo":"US","time":"today 5-y"},{"keyword":"Data Scientist","geo":"US","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&geo=US&q=Web%20developer,Data%20Scientist","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-          <h6>Percent of Listings over Time - Web Developer vs Data Scientist</h6>
+          <h6 >Percent of Listings over Time - Web Developer vs Data Scientist</h6>
           <img src="/img/indeed-job-trends.png" alt="job trends">
           <h6>Job Category Trends - Data Science</h6>
           <img src="/img/data-science-comparison.png" alt="job trends">
