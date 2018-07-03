@@ -193,16 +193,29 @@
       // Draw the chart and set the chart values
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-        ['Company', "Frequency"],
-        ['Javascript', .08],
-        ['b', .07],
-        ['c', .06],
-        ['d', .05],
-        ['e', .04],
-        ['f', .07],
-        ['g', .06],
-        ['h', .05],
-        ['i', .04]
+        ['Language', "Frequency"],
+        [	' python'	,	0.213200055	],
+        [	' machine-learning'	,	0.198137752	],
+        [	' sql'	,	0.155552513	],
+        [	' big data'	,	0.098452691	],
+        [	' java'	,	0.090510749	],
+        [	' hadoop'	,	0.088730659	],
+        [	' sas'	,	0.081199507	],
+        [	' spark'	,	0.075037656	],
+        [	' matlab'	,	0.04956867	],
+        [	' hive'	,	0.04573463	],
+        [	' linux'	,	0.042174449	],
+        [	' aws'	,	0.038614268	],
+        [	' natural language processing'	,	0.029166096	],
+        [	' spss'	,	0.027522936	],
+        [	'javascript'	,	0.024236615	],
+        [	' azure'	,	0.019307134	],
+        [	' html'	,	0.017116254	],
+        [	' git'	,	0.013282213	],
+        [	' data mining'	,	0.011912913	],
+        [	' ruby'	,	0.010680542	],
+        [	' php'	,	0.008352732	]
+
       ]);
       // Optional; add a title and set the width and height of the chart
       var options = {'title':''};
@@ -222,12 +235,15 @@
            var chartDiv = document.getElementById('chart2');
 
            var data = google.visualization.arrayToDataTable([
-             ['Language', 'BE-Frequency', 'FE-frequency'],
-             ['Javascript', 20, 23.3],
-             ['java', 22, 4.5],
-             ['HTML', 2, 14.3],
-             ['CSS', 5, 9],
-             ['Bootstrap', 6, 13.1]
+             ['Language', 'Web Development', 'Data Science'],
+             [	'javascript'	,	0.36840289755088	,	0.024236615	],
+             [	'html'	,	0.344371622398528	,	0.017116254	],
+             [	'sql'	,	0.269058295964126	,	0.155552513	],
+             [	'java'	,	0.198919167529033	,	0.090510749	],
+             [	'git'	,	0.105783603541451	,	0.013282213	],
+             [	'php'	,	0.101184316430953	,	0.008352732	],
+             [	'linux'	,	0.078647809589514	,	0.042174449	]
+
            ]);
 
            var materialOptions = {
@@ -243,7 +259,7 @@
              axes: {
                y: {
                  distance: {label: 'parsecs'}, // Left y-axis.
-                 brightness: {side: 'right', label: 'apparent magnitude'} // Right y-axis.
+                 // brightness: {side: 'right', label: 'apparent magnitude'} // Right y-axis.
                }
              }
            };
@@ -251,8 +267,8 @@
            var classicOptions = {
              width: 900,
              series: {
-               0: {targetAxisIndex: 0},
-               1: {targetAxisIndex: 1}
+               // 0: {targetAxisIndex: 0},
+               // 1: {targetAxisIndex: 1}
              },
              title: 'Comparing skills between roles',
 
@@ -283,12 +299,44 @@
       // Draw the chart and set the chart values
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-        ['Company', 'Job Openings'],
-        ['Google', 8],
-        ['Facebook', 9],
-        ['Oculus', 2],
-        ['Apple', 13],
-        ['Amazon', 3]
+        ['Keyword', 'frequency'],
+        [	'javascript'	,	0.36840289755088	],
+        [	'html'	,	0.344371622398528	],
+        [	'css'	,	0.288260319650454	],
+        [	'sql'	,	0.269058295964126	],
+        [	'server'	,	0.228929515925032	],
+        [	'net'	,	0.199839024951133	],
+        [	'java'	,	0.198919167529033	],
+        [	'html css'	,	0.197539381395884	],
+        [	'jquery'	,	0.146027365758307	],
+        [	'sql server'	,	0.125675520294354	],
+        [	'xml'	,	0.111877658962861	],
+        [	'angular'	,	0.110497872829711	],
+        [	'asp'	,	0.106128550074738	],
+        [	'git'	,	0.105783603541451	],
+        [	'php'	,	0.101184316430953	],
+        [	'web application'	,	0.100034494653329	],
+        [	'web developer'	,	0.099804530297804	],
+        [	'js'	,	0.099114637231229	],
+        [	'asp net'	,	0.094975278831781	],
+        [	'apis'	,	0.092215706565482	],
+        [	'basic'	,	0.09210072438772	],
+        [	'www'	,	0.090490973899046	],
+        [	'css javascript'	,	0.089801080832471	],
+        [	'soap'	,	0.079567667011613	],
+        [	'mysql'	,	0.078877773945039	],
+        [	'linux'	,	0.078647809589514	],
+        [	'html css javascript'	,	0.075313326434403	],
+        [	'class'	,	0.075313326434403	],
+        [	'json'	,	0.074738415545591	],
+        [	'ajax'	,	0.071518914568242	],
+        [	'python'	,	0.069679199724043	],
+        [	'windows'	,	0.06956421754628	],
+        [	'ui'	,	0.06530987696907	],
+        [	'javascript jquery'	,	0.0545015522594	],
+        [	'possess'	,	0.0545015522594	],
+        [	'ux'	,	0.054271587903875	],
+
       ]);
       // Optional; add a title and set the width and height of the chart
       var options = {'title':'', 'width':550, 'height':400};
