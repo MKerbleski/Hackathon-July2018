@@ -8264,6 +8264,12 @@ h5 {
   text-emphasis: bold;
   font-size: 1rem;
 }
+img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel {
   width: 100%;
   margin: 0;
